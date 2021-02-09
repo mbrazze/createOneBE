@@ -1,0 +1,19 @@
+{
+  "name": "createonebe",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www",
+    "createTable": "node -r dotenv/config ./db/scripts/createTable",
+    "dropTable": "node -r dotenv/config ./db/scripts/dropTable"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "express": "~4.16.1",
+    "morgan": "~1.9.1",
+    "nodemon": "^2.0.7",
+    "pg": "^8.5.1"
+  }
+}
